@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #000;
+  border-bottom: 2px solid #222;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+}
+
+button, select {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.carousel, .section {
+  padding: 1em;
+}
+
+.carousel-items, .items {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
